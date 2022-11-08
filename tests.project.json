@@ -1,0 +1,12 @@
+{
+  "name": "SymbolTest",
+  "tree": {
+    "$className": "Folder",
+    "Packages": {
+      "$path": "Packages",
+      "Symbol": {
+        "$path": "src"
+      }
+    }
+  }
+}
