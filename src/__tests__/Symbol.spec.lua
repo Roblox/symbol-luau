@@ -12,7 +12,7 @@
 	* See the License for the specific language governing permissions and
 	* limitations under the License.
 ]]
-
+--!strict
 --[[
 	Tests in this file are from the Symbol code in Roact:
 	https://github.com/Roblox/roact/blob/v1.3.1/src/Symbol.spec.lua
@@ -22,7 +22,7 @@
 ]]
 local SymbolModule = script.Parent.Parent
 local Symbol = require(SymbolModule)
-local GlobalRegistry = require(SymbolModule.GlobalRegistry)
+local GlobalRegistry = require(SymbolModule["Registry.global"])
 
 local Packages = SymbolModule.Parent
 local JestGlobals = require(Packages.Dev.JestGlobals)

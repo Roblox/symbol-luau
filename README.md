@@ -1,41 +1,33 @@
-<h1 align="center">Symbol</h1>
-<div align="center">
-	<a href="https://travis-ci.org/Roblox/symbol-lua">
-		<img src="https://api.travis-ci.org/Roblox/symbol-lua.svg?branch=master" alt="Travis-CI Build Status" />
-	</a>
-	<a href="https://coveralls.io/github/Roblox/symbol-lua?branch=master">
-		<img src="https://coveralls.io/repos/github/Roblox/symbol-lua/badge.svg?branch=master" alt="Coveralls Coverage" />
-	</a>
-	<a href="https://roblox.github.io/symbol-lua">
-		<img src="https://img.shields.io/badge/docs-website-green.svg" alt="Documentation" />
-	</a>
-</div>
+## Symbol
 
-<div align="center">
-	Fill in a tagline about Symbol here
-</div>
+A Symbol object to mimic [JavaScript's Symbol type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
-<div>&nbsp;</div>
+## API
 
-**Fill in a longer description about Symbol here!**
+### Symbol()
+```
+Symbol(name: string?): Symbol
+```
 
-## Installation
+Create a new symbol object. Symbols use the `newproxy` function under the hood to create an opaque, unique sentinel value. The optional string value will be included in value returned by calling `tostring` on the resulting symbol.
 
-### Filesystem
-* Add this repository as a Git submodule or copy it into your project
-* Use a plugin like [Rojo](https://github.com/LPGhatguy/rojo) to sync the `src` folder into a place
+```
+local Foo = Symbol("Foo")
+print(tostring(Foo)) -- prints: 'Symbol("Foo")'
+```
 
-### Model File
-* Download the `rbxmx` model file attached to the latest release from the [GitHub releases page](https://github.com/Roblox/symbol-lua/releases)
-* Insert the model into Studio into a place like `ReplicatedStorage`
+### Symbol.for_
+```
+Symbol.for_(name: string)
+```
 
-## Documentation
-Documentation for Symbol is available on [the official documentation website](https://roblox.github.io/symbol-lua).
+Returns globally-shared symbol for the provided name, creating it in a global registry if it has not yet been accessed. `Symbol.for_` uses a global registry for the lifetime of the lua execution.
+
+## Types
+
+### Symbol
+
+Calling `Symbol.new` returns an object with type `Symbol`.
 
 ## License
 Licensed under the MIT license ([LICENSE.txt](LICENSE.txt) or http://opensource.org/licenses/MIT).
-
-### Contribution
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the MIT license, shall be licensed as above, without any additional terms or conditions.
-
-Take a look at the [contributing guide](CONTRIBUTING.md) for guidelines on how to contribute to Symbol.

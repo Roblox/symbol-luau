@@ -1,4 +1,5 @@
 # Symbol Changelog
 
-## Unreleased Changes
-* *No changes*
+## 1.0.0
+
+Initial release
