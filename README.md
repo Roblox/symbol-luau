@@ -1,4 +1,7 @@
-## Symbol
+# Symbol
+
+[![Get it on Creator Store](./.github/assets/link-creator-store.svg)](https://create.roblox.com/store/asset/15239212849)
+[![Wally (external link)](./.github/assets/link-wally.svg)](https://wally.run/package/roblox/symbol)
 
 A Symbol object to mimic [JavaScript's Symbol type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 

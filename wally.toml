@@ -1,0 +1,11 @@
+[package]
+name = "roblox/symbol"
+description = "A Symbol object to mimic JavaScript's Symbol type."
+version = "1.0.0"
+license = "MIT"
+authors = ["Roblox <no-reply@roblox.com>"]
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+repository = "https://github.com/Roblox/symbol-luau"
+
+[dependencies]
