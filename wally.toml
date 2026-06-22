@@ -1,11 +1,25 @@
 [package]
 name = "roblox/symbol"
 description = "A Symbol object to mimic JavaScript's Symbol type."
-version = "1.0.0"
+version = "1.0.1"
 license = "MIT"
 authors = ["Roblox <no-reply@roblox.com>"]
 realm = "shared"
-registry = "https://github.com/upliftgames/wally-index"
+registry = "https://github.com/UpliftGames/wally-index"
 repository = "https://github.com/Roblox/symbol-luau"
+exclude = [
+    "CHANGELOG.md",
+    "Packages",
+    "foreman.toml",
+    "mirror-ignore.txt",
+    "multipack.toml",
+    "rotriever.lock",
+    "rotriever.toml",
+    "scripts",
+    "selene.toml",
+    "tests.project.json",
+    "src/__tests__",
+    "src/jest.config.lua",
+]
 
 [dependencies]
