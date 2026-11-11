@@ -13,6 +13,8 @@ exclude = [
     "foreman.toml",
     "mirror-ignore.txt",
     "multipack.toml",
+    "pkg.luau",
+    "pkg.lock.luau",
     "rotriever.lock",
     "rotriever.toml",
     "scripts",

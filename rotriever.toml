@@ -2,6 +2,7 @@
 name = "Symbol"
 authors = ["Roblox"]
 version = "1.0.1"
+repository = "https://github.com/Roblox/symbol-luau-internal"
 content_root = "src"
 license = "MIT"
 files = ["*", "!**/__tests__", "!jest.config.lua"]
